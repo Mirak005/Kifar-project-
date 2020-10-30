@@ -1,0 +1,37 @@
+.edit{
+    color: #19c916;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    background: #e1f7da;
+    
+    
+}
+
+.edit:hover{
+    color: #6de851;
+    background:#19c916 ;
+    box-shadow:0 0 10px, 0 0 40px #19c916, 0 0 80px #19c916;
+
+}
+
+.delete{
+    color: #fc7a47;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 67.95;
+    background:#f7e3da ;
+    height: 69%;
+}
+
+.delete:hover{
+    color: #eb4b36;
+    background:#fc7a47 ;
+    box-shadow:0 0 10px, 0 0 40px #fc7a47, 0 0 80px #fc7a47;
+    
+}

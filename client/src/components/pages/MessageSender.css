@@ -1,0 +1,21 @@
+input, textarea{
+    outline-width: 0;
+    border:none ;
+    padding : 5px 20px ;
+    margin: 5px !important;
+    border-radius: 10px;
+    background-color: #eff2f5;
+    width: 100%;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    margin: 5px !important;
+    border-radius: 10px !important;
+    background-color: #54c0d1;
+}
+.input-Sender{
+    display: flex;
+  justify-content: center;
+}

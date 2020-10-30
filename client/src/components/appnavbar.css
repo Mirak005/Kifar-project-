@@ -1,0 +1,54 @@
+.logout {
+        margin: 40px 0 ;
+        color:#a52014 ;
+        text-decoration:none ;
+        text-Transform:uppercase ;
+        transition:0.5s;
+        letter-spacing:4px ;
+        background:black}
+
+.logout >p:hover
+{
+  background: #800b00 ;
+  color: black; 
+  box-shadow: 0 0 5px #800b00 , 0 0 25px #800b00 , 0 0 50px #800b00 , 0 0 200px #800b00;
+}
+
+.Accueil  {
+    margin: 40px 0 ;
+    color:#063e6d ;
+    text-decoration:none ;
+    text-Transform:uppercase ;
+    transition:0.5s;
+    letter-spacing:4px ;
+    background:black}
+
+.Accueil > p :hover
+{
+background: #063e6d ;
+color: black; 
+box-shadow: 0 0 5px #063e6d, 0 0 25px #063e6d , 0 0 50px #063e6d , 0 0 200px #063e6d;
+}
+
+
+.Profile {
+    margin: 40px 0 ;
+    color:#063e6d ;
+    text-decoration:none ;
+    text-Transform:uppercase ;
+    transition:0.5s;
+    letter-spacing:4px ;
+    background:black}
+
+.Profile :hover
+{
+background: #063e6d ;
+color: black; 
+box-shadow: 0 0 5px #063e6d, 0 0 25px #063e6d , 0 0 50px #063e6d , 0 0 200px #063e6d;
+}
+
+.navbar
+{
+    background:black  
+}
+
