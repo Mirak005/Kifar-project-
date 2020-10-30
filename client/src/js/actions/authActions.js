@@ -67,7 +67,7 @@ export const login = (formData) => async (dispatch) => {
 // get auth user
 
 export const getAuthUser = () => async (dispatch) => {
-  dispatch(setLoading());
+  // dispatch(setLoading());
 
   try {
     const options = {

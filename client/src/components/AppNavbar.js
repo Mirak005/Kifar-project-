@@ -11,11 +11,17 @@ const AppNavbar = () => {
   const dispatch = useDispatch();
   const isAuth = useSelector((state) => state.authReducer.isAuth);
   return (
-    <navbar className="navbar" color="dark" dark>
+    <div className="navbar" color="dark" dark>
       <NavbarBrand
         tag={() => (
           <Link
-            style={{ textDecoration: "none", color: "white", fontSize: "25px" , cursor: "pointer" , marginRight: "auto"}}
+            style={{
+              textDecoration: "none",
+              color: "white",
+              fontSize: "25px",
+              cursor: "pointer",
+              marginRight: "auto",
+            }}
             to="/"
           >
             Carpooling
@@ -26,14 +32,20 @@ const AppNavbar = () => {
         {isAuth ? (
           <Fragment>
             <NavItem className="p-2">
-              <button className="logout"
-              onClick={() => dispatch(logout())} color="light">
-               <p> Logout </p>
+              <button
+                className="logout"
+                onClick={() => dispatch(logout())}
+                color="light"
+              >
+                <p> Logout </p>
               </button>
             </NavItem>
             <NavItem className="p-2">
               <button className="Accueil">
-               <p> <Link to="/dashboard">Accueil</Link> </p>
+                <p>
+                  {" "}
+                  <Link to="/dashboard">Accueil</Link>{" "}
+                </p>
               </button>
             </NavItem>
             <NavItem className="p-2">
@@ -53,7 +65,7 @@ const AppNavbar = () => {
           </Fragment>
         )}
       </Nav>
-    </navbar>
+    </div>
   );
 };
 

@@ -12,7 +12,7 @@ const initState = {
   _id: "",
   user: null,
   isAuth: false,
-  isLoading: false,
+  isLoading: true,
   msg: null,
 };
 

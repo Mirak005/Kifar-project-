@@ -15,17 +15,16 @@ import { getAuthUser } from "./js/actions/authActions";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-
 function App() {
   const dispatch = useDispatch();
-  // const { isLoading } = useSelector((state) => state.authReducer);
+  const { isLoading } = useSelector((state) => state.authReducer);
   const getUser = () => dispatch(getAuthUser());
   useEffect(() => {
     getUser();
   }, []);
-  // if (isLoading) {
-  //   return <h1>Spinner....</h1>;
-  // }
+  if (isLoading) {
+    return <h1>Spinner....</h1>;
+  }
   return (
     <BrowserRouter>
       <AppNavbar />
@@ -33,9 +32,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
         <PrivateRoute path="/profile" component={Profile} />
-        <PrivateRoute  path="/propos" component={Propos} />
-        <PrivateRoute  path="/proposuser/:id" component={ProposUser} />
-        
+        <PrivateRoute path="/propos" component={Propos} />
+        <PrivateRoute path="/proposuser/:id" component={ProposUser} />
       </Switch>
     </BrowserRouter>
   );
